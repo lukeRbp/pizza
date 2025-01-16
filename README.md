@@ -18,7 +18,7 @@ Clone the repository:
 
 bash
 Copiar
-git clone https://github.com/yourusername/pizza-website.git
+git clone (https://github.com/lukeRbp/pizza)
 Navigate to the project folder:
 
 bash

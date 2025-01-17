@@ -41,7 +41,6 @@ const swiperPopular = new Swiper('.popular__swiper', {
     centeredSlides: 'auto',
 })
 
-
 /*=============== SHOW SCROLL UP ===============*/ 
 const scrollUp = () =>{
     const scrollUp = document.getElementById('scroll-up')

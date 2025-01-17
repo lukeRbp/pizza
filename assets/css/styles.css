@@ -1,11 +1,10 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Carter+One&family=Montserrat:wght@100..900&display=swap");
 
-/*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
 
-  /*========== Colors ==========*/
+  /*========== Cores ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   --first-color: hsl(353, 93%, 50%);
   --first-color-alt: hsl(353, 93%, 46%);
@@ -19,7 +18,7 @@
   --shadow-small-img: drop-shadow(0 4px 16px hsla(353, 100%, 8%, .2));
   --shadow-big-img: drop-shadow(0 8px 24px hsla(353, 100%, 8%, .2));
 
-  /*========== Font and typography ==========*/
+  /*========== Fonte e Tipografia ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Montserrat", sans-serif;
   --second-font: "Carter One", system-ui;
@@ -31,18 +30,13 @@
   --normal-font-size: .938rem;
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
-
-  /*========== Font weight ==========*/
   --font-regular: 400;
   --font-medium: 500;
   --font-semi-bold: 600;
-
-  /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
 }
 
-/*========== Responsive typography ==========*/
 @media screen and (min-width: 1150px) {
   :root {
     --biggest-font-size: 4.25rem;
@@ -106,7 +100,6 @@ img {
   height: auto;
 }
 
-/*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 1120px;
   margin-inline: 1.5rem;
@@ -130,7 +123,7 @@ img {
   overflow: hidden;
 }
 
-/*=============== HEADER & NAV ===============*/
+/* header */
 .header{
   position: fixed;
   width: 100%;
@@ -169,7 +162,7 @@ img {
   cursor: pointer;
 }
 
-/* Navigation for mobile devices */
+/* Navegação para dispositivos móveis */
 @media screen and (max-width: 1150px){
   .nav__menu{
     position: fixed;
@@ -345,7 +338,7 @@ img {
   background-color: var(--first-color-alt);
 }
 
-/*=============== ABOUT ===============*/
+/*=============== SOBRE ===============*/
 .about{
   background-color: var(--container-color);
 }
@@ -436,7 +429,7 @@ img {
 :is(.swiper-slide-active, .swiper-slide-duplicate-active) .popular__title{
   opacity: 1;
 }
-/*=============== RECIPE ===============*/
+/*=============== RECEITA ===============*/
 .recipe{
   background-color: var(--container-color);
 }
@@ -472,7 +465,7 @@ font-size: var(--small-font-size);
   filter: var(--shadow-big-img);
 }
 
-/*=============== PRODUCTS ===============*/
+/*=============== PRODUTOS ===============*/
 .products__container{
   padding-top: 3.5rem;
   grid-template-columns: repeat(2, 1fr);
@@ -533,7 +526,7 @@ font-size: var(--small-font-size);
   transform: translateY(-.5rem);
 }
 
-/*=============== CONTACT ===============*/
+/*=============== CONTATO ===============*/
 .contact__container{
   position: relative;
   background-color: var(--first-color-dark);
@@ -749,7 +742,6 @@ font-size: var(--small-font-size);
   bottom: 3rem;
 }
 
-/*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 320px){
   .container{
